@@ -1,10 +1,11 @@
 {% extends 'store/main.html' %}
+
 {% load static %}
 {% block content %}
 	{% include 'store/inc/slider.html' %}
 	<div class="row">
 		{% for product in products %}
-      <div class="col-lg-4">
+      <div class="col-md-3">
 	  <img class="thumbnail" src="{{product.imageURL}}">
 		<div class="box-element product">
 			<h6><strong>{{product.name}}</strong></h6>

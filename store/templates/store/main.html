@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load static %}
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Rock of Art</title>
@@ -82,11 +82,8 @@
 	     	<a href="{% url 'cart' %}">
 	    		<img  id="cart-icon" src="{% static 'images/cart.png' %}">
 	    	</a>
-	    	<p id="cart-total">{{cartItems}}</p>
-			<form class="d-flex">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-			</form>
+	    	<p id="cart-total">0</p>
+
 	    </div>
 	  </div>
 	</nav>
@@ -98,6 +95,7 @@
 
             {% endblock content %}
          </div>
+
 
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
